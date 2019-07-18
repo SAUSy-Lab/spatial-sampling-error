@@ -8,5 +8,5 @@ experiments examining the uncertainty stemming from spatial sampling during zone
 Requires several python3 libraries:
 
 ```
-conda install numpy scipy panda geopandas pysal shapely geoplot matplotlib 
+conda install numpy scipy pandas geopandas pysal shapely geoplot matplotlib 
 ```
