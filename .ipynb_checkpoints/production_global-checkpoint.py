@@ -1,3 +1,19 @@
+# code for computing measures of spatial autocorrelation of random generated points
+# for different grids and sampling rates, specifically, do othe following
+
+# For i in I iterations (e.g. 1000)
+#  Create a random distribution of points
+#  Create spatial weights matrix
+#  For $\rho$ in `[0, 0.2, 0.4, 0.8, 1]`
+#   Use spatial autoregressive model $Y = (I - \rho W)^{-1} \epsilon$ to generate autocorrelated variable for each point
+#   Loop over each sample size `["3%","5%","10%","20%","50%","100%"]`
+#    and then over each grid size `["6x6","8x8","10x10","12x12","15x15"]`
+#    Aggregating the sampled points to each grid cell.
+#    Computing global spatial autocorrelation stats
+#    outputting data to a list
+#  save to a csv file 
+
+
 import numpy as np
 import pandas as pd
 import geopandas as gpd
